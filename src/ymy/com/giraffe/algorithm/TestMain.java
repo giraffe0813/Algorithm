@@ -3,8 +3,9 @@ package ymy.com.giraffe.algorithm;
 public class TestMain {
 
 	public static void main(String[] args) {
-		int [] nums = {1,2,2,2,2,2,2,2,2,3,3,3,3,4,5};
-		int length = Plateau.bestGetPlateau(nums);
+		int [] f = {1,3,5,7,9};
+		int [] g = {1,3,5,7,9};
+		int length = GTCount.getGTCount(f, g);
 		System.out.println(length);
 
 	}
