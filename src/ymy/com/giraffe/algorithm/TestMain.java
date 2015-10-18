@@ -3,9 +3,9 @@ package ymy.com.giraffe.algorithm;
 public class TestMain {
 
 	public static void main(String[] args) {
-		int [] f = {1,3,5,7,9};
-		int [] g = {1,3,5,7,9};
-		int length = GTCount.getGTCount(f, g);
+		int [] f = {1,3,4,7,9};
+		int [] g = {2,5,6};
+		int length = EquleCount.getEquleCount(f, g);
 		System.out.println(length);
 
 	}
