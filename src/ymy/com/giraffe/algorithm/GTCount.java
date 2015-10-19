@@ -12,14 +12,12 @@ public class GTCount {
 	public static int getGTCount(int[] f, int[] g) {
 		int num = 0;
 		for (int i = 0; i < f.length; i++) {
-		
 			for(int j = g.length - 1;j >= 0; j--){
 				//由于是排好序的 当f[i] > g[j]时 无需在比较g[j-1]...等
 				if(f[i] > g[j]){
 					num += j + 1;
 					break;
  				}
-				
 			}
 		}
 		return num;
