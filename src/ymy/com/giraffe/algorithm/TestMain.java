@@ -6,7 +6,7 @@ public class TestMain {
 
 	public static void main(String[] args) {
 		List<Integer> list = Armstrong.getAllArmstrong();
-		System.out.println(list.size());
+		System.out.println(RPower.getPower(3,3));
 
 	}
 
