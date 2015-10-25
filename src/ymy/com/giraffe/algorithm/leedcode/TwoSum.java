@@ -28,4 +28,41 @@ public class TwoSum {
         return null;
     }
 
+    //返回两个数 不需要返回位置
+    //利用二分查找做 先将数组排序 对于每个元素查找target-nums[i]是不是在数组中
+    public static int[] twoSum1(int[] nums, int target){
+        int[]result = new int [2];
+        Arrays.sort(nums);
+        int location = 0;
+        for(int i = 0; i < nums.length ; i++){
+            location = binarySearch(nums, target - nums[i]);
+            if(location != -1) {
+                result[0] = nums[i];
+                result[1] = nums[location];
+                break;
+            }
+        }
+        return result;
+
+    }
+
+    //二分查找
+    private static int binarySearch(int[]nums,int target){
+        int high = nums.length - 1;
+        int low = 0;
+        int middle = (high + low)/2;
+        while(high >= low){
+            if(nums[middle] < target){
+                low = middle + 1;
+            }else if (nums[middle] > target){
+                high = middle - 1;
+            }else {
+                return middle;
+            }
+            middle = (high + low)/2;
+        }
+        return -1;
+
+    }
+
 }
