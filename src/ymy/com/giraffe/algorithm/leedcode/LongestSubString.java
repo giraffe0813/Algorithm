@@ -41,6 +41,7 @@ public class LongestSubString {
         if (s.length() == 1) return 1;
         int rightPointer = 0, leftPointer = rightPointer - 1, answer = 0;
         while (rightPointer != s.length()) {
+            //map put方法的返回值是key以前关联的值 若没有返回null
             Integer previousOccurrence = map.put(s.charAt(rightPointer), rightPointer);
             if (previousOccurrence != null) {
                 leftPointer = Math.max(leftPointer, previousOccurrence);
