@@ -42,6 +42,8 @@ public class MedianSortedArrays {
         return (result[result.length/2] + result[result.length/2 - 1])/(double)2;
     }
 
+
+
     /**
      * 寻找第k小的数 假设两个数组为升序
      * @return
@@ -60,7 +62,6 @@ public class MedianSortedArrays {
         while (pa + pb != k) {
             int Ai = (pa == A.length) ? Integer.MAX_VALUE : A[pa];
             int Bj = (pb == B.length) ? Integer.MAX_VALUE : B[pb];
-
             if (Ai < Bj) {
                 pa++;
                 kthValue = Ai;
