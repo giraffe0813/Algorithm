@@ -1,5 +1,6 @@
 package ymy.com.giraffe.algorithm;
 
+import ymy.com.giraffe.algorithm.leedcode.LongestPalindrome;
 import ymy.com.giraffe.algorithm.leedcode.LongestSubString;
 import ymy.com.giraffe.algorithm.leedcode.MedianSortedArrays;
 
@@ -13,7 +14,7 @@ public class TestMain {
 
 		int[]a= {1,2,3,4};
 		int[] b={1,2,3,4};
-		System.out.print(new MedianSortedArrays().kthTwoSortedArray(a,b,2));
+		System.out.print(new LongestPalindrome().getLongestPalindrome("ddd"));
 	}
 
 }
