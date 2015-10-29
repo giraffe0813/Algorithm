@@ -55,4 +55,22 @@ public class ZigZag {
 
     }
 
+
+    public String zigzag2(String s, int rownums){
+        if(null == s || s.length() == 0 || rownums < 1) return "";
+        if(rownums == 1) return s;
+        StringBuilder str = new StringBuilder();
+        int size = 2*rownums - 2;
+        for(int i=0; i < rownums; i++){
+            for(int j = i;j<s.length();j +=size){
+                str.append(s.charAt(j));
+                if(i!=0 && i!=rownums-1 && j+size-2*i < s.length()){
+                    str.append(s.charAt(j+size-2*i));
+               }
+            }
+
+        }
+        return str.toString();
+    }
+
 }

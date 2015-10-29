@@ -15,7 +15,7 @@ public class TestMain {
 
 		int[]a= {1,2,3,4};
 		int[] b={1,2,3,4};
-		System.out.print(new ZigZag().zigZag("ABCD",3));
+		System.out.print(new ZigZag().zigzag2("ABCD",2));
 	}
 
 }
