@@ -1,9 +1,6 @@
 package ymy.com.giraffe.algorithm;
 
-import ymy.com.giraffe.algorithm.leedcode.LongestPalindrome;
-import ymy.com.giraffe.algorithm.leedcode.LongestSubString;
-import ymy.com.giraffe.algorithm.leedcode.MedianSortedArrays;
-import ymy.com.giraffe.algorithm.leedcode.ZigZag;
+import ymy.com.giraffe.algorithm.leedcode.*;
 
 import java.util.List;
 
@@ -15,7 +12,7 @@ public class TestMain {
 
 		int[]a= {1,2,3,4};
 		int[] b={1,2,3,4};
-		System.out.print(new ZigZag().zigzag2("ABCD",2));
+		System.out.print(new ReverseInteger().getReverseInteger(-1100));
 	}
 
 }
