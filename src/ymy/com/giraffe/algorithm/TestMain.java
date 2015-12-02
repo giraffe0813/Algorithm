@@ -11,7 +11,7 @@ public class TestMain {
 
 		int[]a= {1,2,3,4};
 		int[] b={1,2,3,4};
-		System.out.print(MyAtoi.string2int("       -22222"));
+		System.out.print(new PalindromeInt().ifPalindrome(123321));
 	}
 
 }
